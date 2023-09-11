@@ -1,0 +1,77 @@
+*{
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  width: 400px;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:10px;
+  border:1px solid gray;
+  gap:20px;
+  margin-top: 40px;
+}
+
+#input{
+  width: 90%;
+  font-size: 20px;
+  padding:15px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  box-shadow:0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 20px;
+}
+
+input[type=button]{
+  font-size: 25px;
+  padding: 12px;
+  margin:10px;
+  cursor: pointer;
+  border:none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+/* clear and delete button styling */
+.clear{
+  background-color: orangered;
+  color:white;
+}
+
+
+/* operator buttons styling */
+.operator{
+  background-color: blueviolet;
+  color:white;
+}
+
+/* equal buttons styling */
+.equal{
+  background-color: green;
+  color:white;
+  grid-row: span 3;
+}
+
+.clear:hover,.operator:hover,.equal:hover{
+  opacity: .8;
+}
+
+.number:hover{
+  background-color: white;
+}
+
+
+
+
+
+
